@@ -19,10 +19,10 @@ namespace TwoToFour.Controllers
             _morningService = MorningService;
         }
 
-        [HttpPost("AddGreeting/{name}/{time}")]
-        public string AddGreeting(string name, string time)
+        [HttpPost("AddGreeting/{name}/{wakeUpTimeToday}")]
+        public string AddGreeting(string name, string wakeUpTimeToday)
         {
-            return _morningService.AddGreeting(name,time);
+            return _morningService.AddGreeting(name, wakeUpTimeToday);
         }
 
     

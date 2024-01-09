@@ -7,6 +7,6 @@ namespace TwoToFour.Service.Morning
 {
     public interface IMorningService
     {
-        string AddGreeting(string name, string time);
+        string AddGreeting(string name, string wakeUpTimeToday);
     }
 }
