@@ -19,7 +19,7 @@ namespace TwoToFour.Controllers
         }
 
         [HttpPost ("AddNums/{num1}/{num2}")]
-        public string AddNums(int num1, int num2)
+        public string AddNums(string num1, string num2)
         {
             return _additionService.AddNums(num1, num2);
         }

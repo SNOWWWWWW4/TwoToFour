@@ -1,4 +1,6 @@
 using TwoToFour.Service.Addition;
+using TwoToFour.Service.Comparison;
+using TwoToFour.Service.Morning;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IAdditionService, AdditionService>();
+builder.Services.AddScoped<IMorningService, MorningService>();
+builder.Services.AddScoped<IComparisonService, ComparisonService>();
 
 var app = builder.Build();
 

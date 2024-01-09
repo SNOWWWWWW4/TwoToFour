@@ -7,6 +7,6 @@ namespace TwoToFour.Service.Addition
 {
     public interface IAdditionService
     {
-        string AddNums(int num1, int num2);
+        string AddNums(string num1, string num2);
     }
 }
