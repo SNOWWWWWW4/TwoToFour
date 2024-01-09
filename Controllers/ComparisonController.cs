@@ -18,7 +18,7 @@ namespace TwoToFour.Controllers
             _comparisonService = ComparisonService;
         }
 
-        [HttpPost("Compare/{number1}/{number2}")]
+        [HttpPost("Compare/{num1}/{num2}")]
 
         public string AddCompare(string num1, string num2)
         {
