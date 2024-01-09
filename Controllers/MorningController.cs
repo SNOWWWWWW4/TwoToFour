@@ -18,11 +18,13 @@ namespace TwoToFour.Controllers
         {
             _morningService = MorningService;
         }
+
+        [HttpPost("AddGreeting/{name}/{time}")]
         public string AddGreeting(string name, string time)
         {
             return _morningService.AddGreeting(name,time);
         }
 
-        
+    
     }
 }
